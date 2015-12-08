@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Flama-Light;
+    src: url(fonts/flama-light-webfont.woff);
+}
+@font-face {
+    font-family: Flama-Book;
+    src: url(fonts/flama-book-webfont.woff);
+}
+@font-face {
+    font-family: Flama-Black;
+    src: url(fonts/flama-black-webfont.woff);
+}
+@font-face {
+    font-family: Flama-Bold;
+    src: url(fonts/flama-bold-webfont.woff);
+}
+
+
+p.linhafina {
+    font-family:"Flama-Light";
+    font-size:20px;
+    text-align: justify;
+}
+
+p.explicacao {
+    padding-top:8px;
+    padding-left:5px;
+    padding-bottom:5px;
+    font-size:1.4rem;
+    text-align: justify;
+}
+
+.edados body {
+    background: #fcfcfa;
+    color: #333;
+    font-family: "Flama-Book";
+    margin-left: 0.8rem;
+    position: relative;
+    width: 90%;
+}
+
+h1.titulo {
+    font-family: "Flama-Bold";
+    color: #000;
+    font-size: 30px;
+    margin: .3em 0 .1em 0;
+}
+
+a {
+    color: steelblue;
+}
+
+a:not(:hover) {
+    text-decoration: none;
+}
+text {
+    font-family:"Flama-Light" !important;
+    font-size:1.1rem !important;
+    font: 10px sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    background: white;
+    border-radius: 8px;
+    pointer-events: none;
+    border:2px solid;
+    color:black;
+    line-height: 0.7;
+}
+
+div.tooltip {
+    font-family: Flama-Book;
+}
+
+div.tooltip b {
+    font-family: Flama-Bold;
+}
+
+div#topo {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+
+}
+
+div#resto {
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1;
+    font-size: 15px
+}
+
+#seguidos {
+    position: relative;
+    width: 100%;
+}
+
+#loading-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-transform: uppercase;
+    font-family: Flama-Bold;
+    background-color: #2c3e50;
+    color:white;
+}
+
+td.numero {
+    text-align: right;
+}
+
+td.perfil {
+    font-family: Flama-Bold;
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+table {
+    width:92%;
+}
+
+.nav.nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float:none;
+}
+
+.navbar-inner{
+    text-align:center;
+}
+
+
+#titulo {
+    font-size:25px;
+    text-transform: uppercase;
+    margin-top:10px;
+}
+
+p.linhafina {
+    font-family:"Flama-Light";
+    font-size:20px;
+    text-align: justify;
+}
+
+p.explicacao {
+    padding-top:8px;
+    padding-left:5px;
+    padding-bottom:5px;
+    font-size:1.4rem;
+    text-align: justify;
+}
+
+.edados body {
+    background: #fcfcfa;
+    color: #333;
+    font-family: "Flama-Book";
+    margin-left: 0.8rem;
+    position: relative;
+    width: 90%;
+}
+
+h1#titulo {
+    font-family: "Flama-Bold";
+    font-size: 30px;
+    margin: .3em 0 .1em 0;
+}
+
+
+
+text {
+    font-family:"Flama-Light" !important;
+    font-size:1.1rem !important;
+    font: 10px sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+th {
+    text-transform: uppercase;
+    font-family: Flama-Bold;
+    background-color: #2c3e50;
+    color:white;
+}
+
+td.numero {
+    text-align: right;
+}
+
+td.perfil {
+    font-family: Flama-Bold;
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+table {
+    width:92%;
+}

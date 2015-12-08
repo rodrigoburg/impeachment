@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="edados">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>O Radar do Impeachment - Estadão Dados</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="creator" content="Daniel Bramatti">
+    <meta name="creator" content="Rodrigo Burgarelli">
+    <meta name="creator" content="Guilherme Duarte">
+    <meta name="creator" content="Estadão Dados">
+    <meta name="creator" content="Estadão.com.br">
+    <meta property="og:site_name" content="Estadão Dados">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- meta tags específicas de cada projeto -->
+    <meta name="author" content="Rodrigo Burgarelli, Daniel Bramatti & Guilherme Duarte"> <!-- A pessoa responsável pelo desenvolvimento deste arquivo -->
+    <meta name="DC.creator " content="Rodrigo Burgarelli, Daniel Bramatti & Guilherme Duarte"> <!-- Desenvolvedor da página -->
+    <meta name="DC.creator.address" content="rodrigo.burgarelli1@gmail.com"> <!-- email do autor da página -->
+
+    <!-- O nome desta aplicação -->
+
+    <meta name="application-name" content="O Radar do Impeachment">
+    <meta property="og:title" content="O Radar do Impeachment">
+
+
+    <!-- Descrição curta e precisa do conteúdo desta página -->
+
+    <meta name="description" content="Veja a taxa de governismo de cada um dos membros eleitos para a comissão do impeachment #estadaodados">
+    <meta property="og:description" content="Veja a taxa de governismo de cada um dos membros eleitos para a comissão do impeachment #estadaodados">
+
+
+    <!-- Palavras reletantes relativas ao conteúdo dessa página. Em formato texto e separadas por vírgula. -->
+
+    <meta name="keywords" content="impeachment, partidos, congresso, deputados, dados abertos, opendata, jornalismo de dados, datajournalism">
+
+    <meta property="og:url" content="http://estadaodados.com/impeachment/"/> <!-- ex: http://estadaodados.com/html/coligacoes/ -->
+
+    <!-- imagem que aparecerá no facebook quando o site for compartilhado -->
+
+    <meta property="og:image" content="http://estadaodados.com/impeachment/img/facebook.png"/>
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/estadaodados.css" rel="stylesheet">
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csvToTable.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid navbar-inner navbar-edados">
+            <div class="navbar-collapse collapse navbar-collapse-edados">
+                <div class="navbar-left">
+                    <a href="http://blog.estadaodados.com/" class="nav navbar-nav navbar-left" id="logo-menu" target="_blank">
+                        <img width="120px" style="margin-left:5px, margin-top:5px" src="img/logo-estadao-dados.png">
+                    </a>
+                </div>
+                <div class="nav nav-center">
+                    <h1 id="titulo">O Radar do Impeachment</h1>
+                </div>
+
+
+                <ul class="nav navbar-nav navbar-right share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Festadaodados.com%2Fimpeachment&t=O%20Radar%20do%20Impeachment" title="Compartilhar no Facebook" target="_blank"><img src="img/flat_web_icon_set/inverted/Facebook.png"></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Festadaodados.com%2Fimpeachment&text=O%20Radar%20do%20Impeachment:%20http%3A%2F%2Festadaodados.com%2Fimpeachment&via=estadaodados" target="_blank" title="Tweet"><img src="img/flat_web_icon_set/inverted/Twitter.png"></a></li>
+                <li><a href="mailto:?subject=O%20Radar%20do%20Impeachment&body=0http%3A%2F%2Festadaodados.com%2Fimpeachment" target="_blank" title="Email"><img src="img/flat_web_icon_set/inverted/Email.png"></a></li>
+
+            </ul>
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav> <!-- Fim da barra de navegação do Estadão Dados -->
+</header>
+
+<div id="linha_fina">
+    <p class="linhafina">Veja qual é a taxa de governismo de cada um dos membros eleitos para a comissão do impeachment, de acordo com o <a href="http://estadaodados.com/basometro">Basômetro</a></p>
+    <!-- <ul id="escolhe-grafico" class="nav nav-tabs">
+        <li class="mapa"><a href="#div-grafico">Gráfico temporal</a></li>
+        <li class="seguidos"><a href="#div-tabela">Tabela</a></li>
+    </ul> -->
+</div>
+
+<!--<div class="tab-content">
+    <div role="tabpanel" class="tab-pane" id="div-grafico">
+        <p class="explicacao">Cada bolinha representa um deputado federal com conta no Twitter. A cor indica o partido. Para saber o nome, toque/clique na bolinha. A posição do deputado no gráfico vem dos usuários do Twitter que ele segue. Deputados que compartilham mais amigos ficam próximos uns dos outros. Os que não têm ninguém em comum aparecem  distanciados. Petistas (bolinhas vermelhas) ficam longe dos tucanos (bolinhas azuis), e os peemedebistas (laranja) aparecem entre eles.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="div-tabela">-->
+        <p class="explicacao"></p>
+        <div id="tabela">
+        </div>
+<!-- </div>
+</div> -->
+
+
+<script src="js/d3.v3.min.js"></script>
+
+<script type="text/javascript" src ="js/main.js"></script>
+
+<footer class="col-xs-12 text-center">
+    <p>Rodrigo Burgarelli, Guilherme Duarte e Daniel Bramatti</p>
+    <p><b>Grupo Estado</b> • Copyright © 2007-2015 • <a href="https://creativecommons.org/licenses/by-sa/3.0/br/">Alguns direitos reservados (CC-By-SA)</a></p>
+</footer>
+
+
+</body>
+</html>
+
