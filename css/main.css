@@ -160,6 +160,7 @@ table {
 }
 
 p.linhafina {
+    padding-top: 15px;
     font-family:"Flama-Light";
     font-size:20px;
     text-align: justify;
