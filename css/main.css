@@ -175,6 +175,8 @@ p.explicacao {
 
 .edados body {
     background: #fcfcfa;
+    padding-left:15px;
+
     color: #333;
     font-family: "Flama-Book";
     margin-left: 0.8rem;
