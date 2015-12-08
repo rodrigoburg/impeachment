@@ -19,6 +19,8 @@ nav.navbar {
   min-height: 25px;
 }
 
+.navbar-right > ul > li { float:left; }
+
 /* Barra de navegação principal do Estadão Dados */
 .navbar-edados,
 .navbar-edados.navbar {

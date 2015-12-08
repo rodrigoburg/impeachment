@@ -61,7 +61,7 @@ function cria_tabela() {
     tableHTML = '<table class="tabela table table-hover table-condensed table-striped table-bordered">';
     tableHeader = "<thead><tr>"
     tableBody = "<tbody>"
-    var lista_inicial = ["deputado","partido","estado","fidelidade"];
+    var lista_inicial = ["deputado","partido","estado","fidelidade","categoria"];
     lista_inicial.forEach(function (d) {
         if (d == "Total de deputados seguindo") {
             tableHeader += "<th id='total'>" + d + "</th>";
@@ -104,17 +104,19 @@ function cria_tabela() {
     table = $(".tabela").DataTable({
         aaSorting: [],
         "lengthMenu": [[-1], ["Todos"]],
+        "paging":   false,
+
         "language": {
             "lengthMenu": "",
             "zeroRecords": "Não foi encontrado nenhum item",
-            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "info": "",
             "infoEmpty": "Não foi encontrado nenhum item",
             "infoFiltered": "(filtrado do total de _MAX_ itens)",
             "paginate":{
-                "previous":"Anterior",
-                "next":"Próxima",
-                "first":"Primeira",
-                "last":"Última"
+                "previous":"",
+                "next":"",
+                "first":"",
+                "last":""
             }
         }
     });
