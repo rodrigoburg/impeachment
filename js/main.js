@@ -103,9 +103,9 @@ function cria_tabela() {
 
     table = $(".tabela").DataTable({
         aaSorting: [],
-        "lengthMenu": [[25, 50, 100, 150, -1], [25, 50, 100, 150, "Todos"]],
+        "lengthMenu": [[-1], ["Todos"]],
         "language": {
-            "lengthMenu": "Mostrar _MENU_ deputados por página",
+            "lengthMenu": "",
             "zeroRecords": "Não foi encontrado nenhum item",
             "info": "Mostrando página _PAGE_ de _PAGES_",
             "infoEmpty": "Não foi encontrado nenhum item",
